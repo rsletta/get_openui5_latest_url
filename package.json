@@ -1,0 +1,19 @@
+{
+  "name": "get_openui5_latest_url",
+  "version": "0.0.1",
+  "description": "Small webservice that returns url to latest OpenUI5 version",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsletta/get_openui5_latest_url.git"
+  },
+  "author": "Ronnie André Bjørvik Sletta",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rsletta/get_openui5_latest_url/issues"
+  },
+  "homepage": "https://github.com/rsletta/get_openui5_latest_url#readme"
+}
