@@ -1,6 +1,6 @@
 !["Logo"](repository-header.png)
 
-A small webservice that returns url to latest OpenUI5 version. Hosted at https://latest-openui5.rikosjett.com. Versions are collected from https://openui5.org/releases/. This API only serves urls to the official downloads.
+A small webservice that returns url to latest OpenUI5 version. Hosted at https://latest-openui5.rikosjett.com. Version URLs are collected from https://openui5.org/releases/. This API only serves URLs to the official downloads.
 
 ## Endpoints
 
