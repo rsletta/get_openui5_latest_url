@@ -27,6 +27,9 @@ app.get('/latest', (req: any, res: any) => {
                 return doc.data();
             }
         }).then(doc => {
+            if(!req.query.type) {
+                res.status(400).send("Missing type query.")
+            }
             const type = req.query.type;
 
             const resData = {
@@ -52,6 +55,9 @@ app.get('/latest/:id', (req: any, res: any) => {
                 return doc.data();
             }
         }).then(doc => {
+            if(!req.query.type) {
+                res.status(400).send("Missing type query.")
+            }
             const type = req.query.type;
 
             const resData = {
