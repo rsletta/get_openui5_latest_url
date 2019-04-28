@@ -40,7 +40,26 @@ app.get('/latest', (req: any, res: any) => {
 });
 
 app.get('/latest/:id', (req: any, res: any) => {
-    res.send(req.params.id);
+    const latestRef = db.collection('versions').doc(req.params.id);
+    latestRef.get()
+           .then(doc => {
+               if (!doc.exists) {
+                   console.error("Document not found. Version: " + req.params.id);
+                   return res.status(404).send("Version not found");
+               } else {
+                   return doc.data();
+               }
+           }).then(doc => {
+               const type = req.query.type;
+               let resData = ""; 
+               if (doc !== undefined) {
+                   resData =  doc[type]
+               }
+               res.send(resData);
+           })
+           .catch(err => {
+               console.log( 'Error getting document:', err);
+           })
 });
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
