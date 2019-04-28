@@ -1,7 +1,7 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
-const express = require('express');
-const cors = require('cors');
+import express = require('express');
+import cors = require('cors');
 import * as bodyParser from "body-parser";
 
 const main = express();
