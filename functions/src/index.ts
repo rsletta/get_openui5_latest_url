@@ -37,7 +37,12 @@ app.get('/latest', (req: any, res: any) => {
                 'type': type,
                 'url': doc[type]
             }
-            res.send(resData);
+            
+            if(req.query.format === 'json') {
+                res.send(resData);
+            } else {
+                res.send(doc[type]);
+            }
         })
         .catch(err => {
             console.log('Error getting document:', err);
@@ -65,7 +70,13 @@ app.get('/latest/:id', (req: any, res: any) => {
                 'type': type,
                 'url': doc[type]
             }
-            res.send(resData);
+
+            if(req.query.format === 'json') {
+                res.send(resData);
+            } else {
+                res.send(doc[type]);
+            }
+            
         })
         .catch(err => {
             console.log('Error getting document:', err);
