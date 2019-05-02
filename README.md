@@ -1,5 +1,11 @@
 !["Logo"](repository-header.png)
 
+[![GitHub release](https://img.shields.io/github/package-json/v/rsletta/get_openui5_latest_url.svg)](https://github.com/rsletta/get_openui5_latest_url/releases/)
+[![GitHub license](https://img.shields.io/github/license/rsletta/get_openui5_latest_url.svg)](https://github.com/rsletta/get_openui5_latest_url/blob/master/LICENSE)
+
+
+
+
 A small webservice that returns url to latest OpenUI5 version. Hosted at https://latest-openui5.rikosjett.com. Version URLs are collected from https://openui5.org/releases/. This API only serves URLs to the official downloads. API call with only type specified, returns the url as a string. If you leave out query options, it defaults to return the runtime URL. When adding format=json, it returns a richer response.
 
 ## Endpoints
