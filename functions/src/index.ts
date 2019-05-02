@@ -1,7 +1,7 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
-import express = require('express');
-import cors = require('cors');
+const express = require('express');
+const cors = require('cors');
 import * as bodyParser from "body-parser";
 
 const main = express();
@@ -21,16 +21,13 @@ app.get('/latest', (req: any, res: any) => {
     latestRef.get()
         .then(doc => {
             if (!doc.exists) {
-                console.error("Document not found.");
-                return res.status(404).send("Document not found");
+                console.error("Version not found in db.");
+                return res.status(404).send("Version not found.");
             } else {
                 return doc.data();
             }
         }).then(doc => {
-            if(!req.query.type) {
-                res.status(400).send("Missing type query.")
-            }
-            const type = req.query.type;
+            const type = req.query.type || "runtime";
 
             const resData = {
                 'version': doc.version,
@@ -54,16 +51,13 @@ app.get('/latest/:id', (req: any, res: any) => {
     latestRef.get()
         .then(doc => {
             if (!doc.exists) {
-                console.error("Document not found. Version: " + req.params.id);
-                return res.status(404).send("Version not found");
+                console.error("Version not found in db. Version: " + req.params.id);
+                return res.status(404).send("Version not found. Version: " + req.params.id);
             } else {
                 return doc.data();
             }
         }).then(doc => {
-            if(!req.query.type) {
-                res.status(400).send("Missing type query.")
-            }
-            const type = req.query.type;
+            const type = req.query.type || "runtime";
 
             const resData = {
                 'version': doc.version,
