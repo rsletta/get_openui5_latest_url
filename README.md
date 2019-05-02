@@ -1,6 +1,6 @@
 !["Logo"](repository-header.png)
 
-A small webservice that returns url to latest OpenUI5 version. Hosted at https://latest-openui5.rikosjett.com. Version URLs are collected from https://openui5.org/releases/. This API only serves URLs to the official downloads. API call with only type specified, returns the url as a string. When adding format=json, it returns a richer response.
+A small webservice that returns url to latest OpenUI5 version. Hosted at https://latest-openui5.rikosjett.com. Version URLs are collected from https://openui5.org/releases/. This API only serves URLs to the official downloads. API call with only type specified, returns the url as a string. If you leave out query options, it defaults to return the runtime URL. When adding format=json, it returns a richer response.
 
 ## Endpoints
 
@@ -13,7 +13,7 @@ API host: `https://latest-openui5.rikosjett.com`
 **Method**: `GET`
 
 **Query options**:
-* type: sdk | runtime | runtimeMobile (required)
+* type: sdk | runtime | runtimeMobile (optional)
 * format: json (optional)
 
 **Example**: `GET /api/v1/latest?type=runtime&format=json`
@@ -64,7 +64,7 @@ Missing type query.
 **Method**: `GET`
 
 **Query options**:
-* type: sdk | runtime | runtimeMobile (required)
+* type: sdk | runtime | runtimeMobile (optional)
 * format: json (optional)
 
 **Example**: `GET /api/v1/latest/1.52?type=runtime&format=json`
