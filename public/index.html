@@ -1,39 +1,101 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Latest OpenUI5 url API</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.10.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.10.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.10.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.10.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.10.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Openui5 Latest Version - Community API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h1>Latest OpenUI5 url API</h1>
-      <h2><a href="https://github.com/rsletta/get_openui5_latest_url#readme">Documentation</a></h2>
-    </div>
-  </body>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="d-flex flex-column">
+    <div id="app">
+        <nav class="navbar navbar-dark bg-dark" role="navigation">
+            <div class="container">
+                <span class="text-white"><img src="https://img.shields.io/github/package-json/v/rsletta/get_openui5_latest_url.svg" alt="Version number"></span>
+
+                <a class="" href="https://github.com/rsletta/get_openui5_latest_url" target="_blank" rel="noopener"
+                    aria-label="GitHub">
+                    <svg class="" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36"
+                        focusable="false">
+                        <title>View on GitHub</title>
+                        <path
+                            d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"
+                            fill="white" fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg d-lg-flex justify-content-center">
+                    <img src="img/repository-header.png" alt="OpenUI5 Latest Version - Community API header">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2></h2>
+                    <p> OpenUI5 Latest Version is a community run API, serving the urls of the latest
+                        available
+                        version
+                        of OpenUI5
+                        from <a href="https://openui5.org/">OpenUI5.org</a>.
+                    </p>
+                    <h4>Documentation:</h4>
+                    <p>
+                        Documentation for the API is available on <a href="https://github.com/rsletta/get_openui5_latest_url" target="_blank">Github</a>.
+                    </p>
+
+                    <h4>Disclaimer:</h4>
+                    <p>
+                        This service has no affiliation to <a href="https://www.sap.com">SAP AG</a> or the
+                        <a href="https://openui5.org/">OpenUI5</a> team.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h2>What are the newest versions?</h2>
+                    <div v-if="listReady" class="">
+
+                        <ul class="list-group">
+                            <li v-for="version in versions" class="list-group-item">
+                                {{ version }}
+                            </li>
+                        </ul>
+                    </div>
+                    <div v-else class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="py-4">
+                <div class="container text-center">
+                    <p class="text-muted">Created with ♥️ by <a href="https://twitter.com/rsletta">Ronnie André Bjørvik
+                            Sletta</a>. Powered by <a href="https://vuejs.org">Vue.js</a>, <a
+                            href="https://firebase.google.com/" target="_blank">Firebase</a>, and <a
+                            href="https://getbootstrap.com">Bootstrap</a>.</p>
+                </div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <!-- development version, includes helpful console warnings -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+        <script src="js/app.js"></script>
+</body>
+
 </html>
