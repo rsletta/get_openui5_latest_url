@@ -1,6 +1,6 @@
 !["Logo"](repository-header.png)
 
-[![GitHub release](https://img.shields.io/github/package-json/v/rsletta/get_openui5_latest_url.svg)](https://github.com/rsletta/get_openui5_latest_url/releases/)
+[![GitHub release](https://img.shields.io/github/package-json/v/rsletta/get_openui5_latest_url.svg)](https://github.com/rsletta/get_openui5_latest_url/)
 [![GitHub license](https://img.shields.io/github/license/rsletta/get_openui5_latest_url.svg)](https://github.com/rsletta/get_openui5_latest_url/blob/master/LICENSE)
 
 
